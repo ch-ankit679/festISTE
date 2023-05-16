@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.register-now{
+  z-index: 100;
+  margin-top: 480px;
+  margin-bottom: 70px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border-style: solid;
+  border-color: rgb(253,146,57);
+  border-width: 2px;
+  padding: 10px;
+}
+
+.register-now:hover{
+   background-color: white;
+   color: rgb(253,146,57); 
+   transition: 0.3s;
+}
+
+.images{
+  background-image: url("images/bg-image.jpg");
+  background-size: cover;
+  height: 640px;
+  margin-top: 70px;  
+  display: flex;
+  justify-content: center;
+  z-index: 200;
+}
+

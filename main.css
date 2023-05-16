@@ -1,0 +1,186 @@
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+  background-color: rgb(29,32,38);
+}
+
+.about-info{
+  color: #b9babc;
+  font-size: 18px;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 80%;
+  border-style: solid;
+  border-radius: 50px;
+  border-width: 2px;
+  border-color: #636465;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #323232;
+}
+
+.team-image{
+  width: 100%;
+  border-radius: 5px;
+}
+
+h1{
+  margin-bottom: 60px;
+  text-align: center;
+  color: rgb(253,146,57);
+  font-size: 46px;
+  font-weight: 500;
+}
+
+.left-side{
+  max-width: 40%;
+}
+
+.mid-side{
+  width: 5%;
+}
+
+.right-side{
+  width: 55%;
+}
+
+.event-heading{
+  margin-top: 100px;
+}
+
+.events-info{
+  background-image: url('images/events-bg.jpg');
+  height: 1240px;
+  width:100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  margin-bottom: 0;
+}
+
+.section-1, .section-2, .section-3{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  margin-bottom: 80px;
+}
+
+.versionbeta, .coda-thon, .megatrep, 
+.chimera, .anu-bhuti, .flairhaven{
+   width: 500px;
+   height: 300px;
+}
+
+.version-beta,
+.flair-heaven,
+.codathon,
+.megatreopuz,
+.chimerax,
+.anubhuti{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.read-more{
+  border: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  color: darkblue;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+.version-beta:hover,
+.flair-heaven:hover,
+.codathon:hover,
+.megatreopuz:hover,
+.chimerax:hover,
+.anubhuti:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.events-info#blur.active{
+  filter: blur(10px);
+  pointer-events: none;
+  user-select: none;
+}
+
+#popup,
+#popup2,
+#popup3,
+#popup4,
+#popup5,
+#popup6{
+  position: fixed;
+  top: 40%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width: 600px;
+  padding: 50px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+h2{
+  text-align: center;
+}
+
+.popup-heading{
+  margin-bottom: 0;
+}
+
+#popup.active,
+#popup2.active,
+#popup3.active,
+#popup4.active,
+#popup5.active,
+#popup6.active{
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.popup-info{
+  font-size: 18px;
+  color: black;
+  font-family: 'Ubuntu', sans-serif;
+  margin-bottom: 15px;
+}
